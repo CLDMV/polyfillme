@@ -1,0 +1,35 @@
+{
+	"name": "polyfillme",
+	"version": "1.0.0",
+	"description": "Scan JS files for unsupported features and generate polyfill file.",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "echo \"No tests yet\""
+	},
+	"keywords": [
+		"polyfill",
+		"compatibility",
+		"es",
+		"ecma",
+		"core-js",
+		"ast"
+	],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"core-js-compat": "^3.0.0",
+		"espree": "^9.0.0",
+		"fast-glob": "^3.0.0"
+	},
+	"devDependencies": {
+		"@eslint/css": "^0.10.0",
+		"@eslint/js": "^9.31.0",
+		"@eslint/json": "^0.13.0",
+		"@eslint/markdown": "^7.0.0",
+		"@prettier/plugin-php": "^0.20.0",
+		"@prettier/plugin-xml": "^1.2.0",
+		"eslint": "^9.31.0",
+		"globals": "^16.3.0",
+		"prettier": "^3.6.2"
+	}
+}
