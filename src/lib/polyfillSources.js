@@ -1,94 +1,58 @@
-/**
- * Polyfill obtaining methods for polyfillme module.
- * Contains: fetchPolyfillIo, sanitizePolyfillName, generatePolyfillFile
- */
-const https = require("https");
-
-function fetchPolyfillIo(url) {
-	return new Promise((resolve, reject) => {
-		let data = "";
-		https
-			.get(url, (res) => {
-				res.on("data", (chunk) => {
-					data += chunk;
-				});
-				res.on("end", () => resolve(data));
-				res.on("error", (err) => reject(err));
-			})
-			.on("error", (err) => reject(err));
-	});
-}
-
-function sanitizePolyfillName(name) {
-	// Only allow alphanumeric, dot, dash, underscore, and no consecutive dots/dashes/underscores
-	if (typeof name !== "string") return "";
-	// Remove anything not allowed
-	let sanitized = name.replace(/[^a-zA-Z0-9._-]/g, "");
-	// Prevent dangerous patterns
-	sanitized = sanitized.replace(/([._-])\1+/g, "$1");
-	// Remove leading/trailing dots/dashes/underscores
-	sanitized = sanitized.replace(/^[._-]+|[._-]+$/g, "");
-	return sanitized;
-}
-
-const fs = require("fs");
-const path = require("path");
+const polyfillLibrary = require("polyfill-library");
+const fetch = require("node-fetch");
 
 /**
- * Generates polyfill output for required features.
- * @async
- * @param {string[]} polyfills - List of polyfills to include.
- * @param {Object} [options] - Output options.
- * @param {boolean} [options.writeToFile=true] - Whether to write to file.
- * @param {string} [options.filePath] - Output file path (default: polyfills.js in project root).
- * @param {string|function} [options.source='core-js'] - Polyfill source ('core-js', 'polyfill.io', or custom function).
- * @returns {Promise<string>} - Polyfill import content or fetched code.
+ * Fetches polyfill code for a list of features from the specified source.
+ * @param {string[]} features - List of features to polyfill.
+ * @param {string} source - Polyfill source ('cloudflare' or 'polyfill-library').
+ * @returns {Promise<string>} - Concatenated polyfill code.
  */
-async function generatePolyfillFile(polyfills, options = {}) {
-	const source = options.source || "core-js";
-	// Sanitize polyfill names for polyfill.io
-	let safePolyfills = polyfills;
-	if (source === "polyfill.io") {
-		safePolyfills = polyfills.map(sanitizePolyfillName).filter(Boolean);
-	}
-	let polyfillLines;
-	let content = "";
-	if (source === "core-js") {
-		polyfillLines = polyfills.map((f) => `import 'core-js/features/${f.replace(/\./g, "/")}';`);
-		content = polyfillLines.join("\n") + "\n";
-	} else if (source === "polyfill.io") {
-		const url = `https://polyfill.io/v3/polyfill.min.js?features=${safePolyfills.map((f) => encodeURIComponent(f)).join(",")}`;
-		let fetched = "";
-		try {
-			fetched = await fetchPolyfillIo(url);
-		} catch (err) {
-			throw new Error("Failed to fetch polyfill.io file: " + err.message);
+async function fetchPolyfillCode(features, source = "polyfill-library") {
+	let polyfillContent = "";
+	if (source === "cloudflare") {
+		for (const feature of features) {
+			const url = `https://cdnjs.cloudflare.com/polyfill/feature/${encodeURIComponent(feature)}`;
+			const res = await fetch(url);
+			polyfillContent += `// Cloudflare polyfill for ${feature}\n` + (await res.text()) + "\n";
 		}
-		content = `// Polyfill.io CDN: ${url}\n` + fetched;
-		// Output to user if run via command line
-		if (require.main === module) {
-			console.log(content);
-		}
-	} else if (typeof source === "function") {
-		polyfillLines = polyfills.map((f) => source(f));
-		content = polyfillLines.join("\n") + "\n";
 	} else {
-		throw new Error("Unknown polyfill source: " + source);
-	}
-	const writeToFile = options.writeToFile !== false;
-	const outPath = options.filePath || path.resolve(__dirname, "../../polyfills.js");
-	if (writeToFile) {
-		try {
-			fs.writeFileSync(outPath, content, "utf8");
-		} catch (err) {
-			throw new Error("Failed to write polyfill file: " + err.message);
+		// Default to polyfill-library
+		const isProd = process.env.NODE_ENV === "production";
+		for (let feature of features) {
+			// Build candidate names for polyfill-library
+			const candidates = [feature];
+			if (feature.startsWith("builtins.")) {
+				candidates.push(feature.replace("builtins.", ""));
+			}
+			if (feature.startsWith("Array.")) {
+				candidates.push(feature.replace("Array.", "Array.prototype."));
+			}
+			if (feature.startsWith("Object.")) {
+				candidates.push(feature.replace("Object.", "Object.prototype."));
+			}
+			if (feature === "Promise" || feature === "builtins.Promise") {
+				candidates.push("Promise");
+			}
+			// Try each candidate until one returns a non-empty polyfill
+			let code = "";
+			let usedName = feature;
+			for (const candidate of candidates) {
+				code = await polyfillLibrary.getPolyfillString({
+					features: { [candidate]: {} },
+					minify: isProd,
+					production: isProd
+				});
+				if (code && !code.includes("These features were not recognised")) {
+					usedName = candidate;
+					break;
+				}
+			}
+			polyfillContent += `// polyfill-library for ${usedName}\n` + code + "\n";
 		}
 	}
-	return content;
+	return polyfillContent;
 }
 
 module.exports = {
-	fetchPolyfillIo,
-	sanitizePolyfillName,
-	generatePolyfillFile
+	fetchPolyfillCode
 };

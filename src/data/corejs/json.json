@@ -1,7 +1,0 @@
-{
-	"es.json.stringify": "es.json.stringify",
-	"es.json.to-string-tag": "es.json.to-string-tag",
-	"esnext.json.is-raw-json": "esnext.json.is-raw-json",
-	"esnext.json.parse": "esnext.json.parse",
-	"esnext.json.raw-json": "esnext.json.raw-json"
-}

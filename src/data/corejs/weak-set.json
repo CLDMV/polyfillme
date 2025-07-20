@@ -1,7 +1,0 @@
-{
-	"es.weak-set": "es.weak-set",
-	"esnext.weak-set.add-all": "esnext.weak-set.add-all",
-	"esnext.weak-set.delete-all": "esnext.weak-set.delete-all",
-	"esnext.weak-set.from": "esnext.weak-set.from",
-	"esnext.weak-set.of": "esnext.weak-set.of"
-}

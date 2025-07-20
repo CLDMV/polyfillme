@@ -78,10 +78,15 @@ function scanFeatures(obj, pathArr = []) {
 
 		const value = obj[key];
 		const newPath = [...pathArr, key];
-		if (value && typeof value === "object" && value.__compat) {
-			const info = extractFeatureInfo(newPath, value);
-			if (info) result[newPath.join(".")] = info;
-		} else if (value && typeof value === "object") {
+
+		// Always descend into objects, even if they have __compat
+		if (value && typeof value === "object") {
+			// If this node has __compat, extract it
+			if (value.__compat) {
+				const info = extractFeatureInfo(newPath, value);
+				if (info) result[newPath.join(".")] = info;
+			}
+			// Descend into all child properties
 			Object.assign(result, scanFeatures(value, newPath));
 		}
 	}
@@ -91,15 +96,63 @@ function scanFeatures(obj, pathArr = []) {
 const fs = require("fs");
 const path = require("path");
 const allJsFeatures = scanFeatures(bcd.javascript);
+// Update allJsFeatures so 'human' is always an array
+for (const [feature, data] of Object.entries(allJsFeatures)) {
+	data.human = toHumanReadableFeature(feature, data);
+}
 const outPath = path.join(__dirname, "../mdn", "mdn.json");
 fs.writeFileSync(outPath, JSON.stringify(allJsFeatures, null, "\t"));
 
 // Build ES-version-keyed object
+function toHumanReadableFeature(key, info) {
+	// Use MDN and spec URLs to generate possible human-readable keys
+	const mdnUrl = info.urls && info.urls.mdn;
+	const specUrl = info.urls && info.urls.spec;
+	const match = key.match(/^builtins\.(\w+)\.(\w+)$/);
+	let keys = [];
+	if (match) {
+		const cls = match[1];
+		const method = match[2];
+
+		// Try to detect prototype from spec URL
+		if (specUrl && specUrl.includes(`${cls.toLowerCase()}.prototype.${method}`)) {
+			keys.push(`${cls}.prototype.${method}`);
+		}
+		// Try to detect prototype from MDN URL
+		if (mdnUrl && new RegExp(`/Global_Objects/${cls}/${method}$`).test(mdnUrl)) {
+			if (!keys.includes(`${cls}.prototype.${method}`)) keys.push(`${cls}.prototype.${method}`);
+			// Always add <class>.<method>
+			keys.push(`${cls}.${method}`);
+			// Add .<method>
+			keys.push(`.${method}`);
+			// Add <method>
+			keys.push(`${method}`);
+		} else {
+			// Always add <class>.<method>
+			keys.push(`${cls}.${method}`);
+			// Add <method>
+			keys.push(`${method}`);
+		}
+		return keys;
+	}
+	// For other keys, just return the original key and .<last> and <last>
+	const last = key.split(".").pop();
+	return [key, last];
+	// return [key, `.${last}`, last];
+}
+
 const esKeyed = {};
 for (const [feature, data] of Object.entries(allJsFeatures)) {
 	if (!data.es) continue;
 	if (!esKeyed[data.es]) esKeyed[data.es] = {};
-	esKeyed[data.es][feature] = data;
+	const humanKeys = toHumanReadableFeature(feature, data);
+	// Store all human keys in the data
+	data.human = humanKeys;
+	// Index by all human keys and the mdn key
+	for (const k of humanKeys) {
+		esKeyed[data.es][k] = feature;
+	}
+	esKeyed[data.es][feature] = feature;
 }
 
 // Sort ES keys: numeric (es1, es2, ...), then year (es2015, ...), then unknown
@@ -121,6 +174,10 @@ function esSort(a, b) {
 	return a.localeCompare(b);
 }
 const sortedEsKeyed = {};
-Object.keys(esKeyed).sort(esSort).forEach(k => { sortedEsKeyed[k] = esKeyed[k]; });
+Object.keys(esKeyed)
+	.sort(esSort)
+	.forEach((k) => {
+		sortedEsKeyed[k] = esKeyed[k];
+	});
 const esOutPath = path.join(__dirname, "../mdn", "mdn.es.json");
 fs.writeFileSync(esOutPath, JSON.stringify(sortedEsKeyed, null, "\t"));

@@ -1,6 +1,0 @@
-{
-	"esnext.promise.all-settled": "esnext.promise.all-settled",
-	"esnext.promise.any": "esnext.promise.any",
-	"esnext.promise.try": "esnext.promise.try",
-	"esnext.promise.with-resolvers": "esnext.promise.with-resolvers"
-}

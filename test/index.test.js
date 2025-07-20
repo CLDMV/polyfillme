@@ -65,7 +65,8 @@ describe("polyfillme", () => {
 		expect(Array.isArray(result.notFound)).toBe(true);
 		// Should include Promise and Array.prototype.includes for es5
 		expect(result.polyfills.some((p) => p.includes("Promise"))).toBe(true);
-		expect(result.polyfills.some((p) => p.includes("Array.prototype.includes"))).toBe(true);
+		// The canonical mdn key for Array.prototype.includes is builtins.Array.includes
+		expect(result.polyfills.some((p) => p.includes("builtins.Array.includes"))).toBe(true);
 	});
 
 	it("excludes already included polyfills", async () => {

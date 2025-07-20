@@ -1,7 +1,0 @@
-{
-	"es.promise": "Promise",
-	"es.map": "Map",
-	"es.set": "Set",
-	"es.symbol": "Symbol",
-	"global-this": "globalThis"
-}

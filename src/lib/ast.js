@@ -1,8 +1,7 @@
 /**
  * Utility functions for polyfillme module.
- * Contains: walkAST, getUnsupportedFeatures
+ * Contains: walkAST
  */
-const compat = require("core-js-compat");
 
 /**
  * Walks the AST and collects used JS features (MemberExpression, CallExpression, Identifier).
@@ -10,7 +9,6 @@ const compat = require("core-js-compat");
  * @param {Set<string>} features - Set to collect feature names (e.g., 'Array.prototype.flat').
  */
 function walkAST(ast, features) {
-	const coreJsFeatures = require("core-js-compat/data");
 	// Track variable types (e.g., arr is Array)
 	const variableTypes = {};
 
@@ -39,11 +37,11 @@ function walkAST(ast, features) {
 
 	function mapToCoreJsKey(type, prop) {
 		// Instance methods
-		if (type === "Array" && prop === "includes") return "es.array.includes";
-		if (type === "Array" && prop === "flat") return "es.array.flat";
-		if (type === "Object" && prop === "entries") return "es.object.entries";
-		if (type === "Object" && prop === "fromEntries") return "es.object.from-entries";
-		if (type === "Promise") return "es.promise";
+		if (type === "Array" && prop === "includes") return "Array.prototype.includes";
+		if (type === "Array" && prop === "flat") return "Array.prototype.flat";
+		if (type === "Object" && prop === "entries") return "Object.entries";
+		if (type === "Object" && prop === "fromEntries") return "Object.fromEntries";
+		if (type === "Promise") return "Promise";
 		// Add more mappings as needed
 		return null;
 	}
@@ -73,9 +71,9 @@ function walkAST(ast, features) {
 				type = obj;
 			}
 			if (type && prop) {
-				let coreJsKey = mapToCoreJsKey(type, prop);
-				if (coreJsKey && (coreJsFeatures[coreJsKey] || coreJsFeatures["es." + coreJsKey] || coreJsFeatures["esnext." + coreJsKey])) {
-					features.add(coreJsKey);
+				let featureName = mapToCoreJsKey(type, prop);
+				if (featureName) {
+					features.add(featureName);
 				}
 			}
 		}
@@ -85,9 +83,9 @@ function walkAST(ast, features) {
 			let name = node.name;
 			// Only add if it's a known global polyfillable object
 			if (["Promise", "Symbol", "Set", "Map"].includes(name)) {
-				let coreJsKey = mapToCoreJsKey(name);
-				if (coreJsKey && (coreJsFeatures[coreJsKey] || coreJsFeatures["es." + coreJsKey] || coreJsFeatures["esnext." + coreJsKey])) {
-					features.add(coreJsKey);
+				let featureName = mapToCoreJsKey(name);
+				if (featureName) {
+					features.add(featureName);
 				}
 			}
 		}
@@ -110,28 +108,6 @@ function walkAST(ast, features) {
 	}
 }
 
-/**
- * Returns features not supported in the specified ES/ECMA version.
- * @param {string[]} features - List of used features.
- * @param {string} ecmaVersion - Target ES/ECMA version (e.g., 'es2018').
- * @returns {string[]} - List of unsupported features.
- */
-function getUnsupportedFeatures(features, ecmaVersion) {
-	// Resolve ES/ECMA alias to Browserslist query
-	const { esEcmaToBrowserslist } = require("./esEcmaToBrowserslist");
-	const query = esEcmaToBrowserslist(ecmaVersion) || ecmaVersion;
-	const data = compat({ targets: query });
-	const supported = new Set(data.list);
-	const unsupported = features.filter((f) => !supported.has(f));
-	if (process.env.POLYFILLME_DEBUG) {
-		console.log("[getUnsupportedFeatures] Query:", query);
-		console.log("[getUnsupportedFeatures] Supported:", Array.from(supported));
-		console.log("[getUnsupportedFeatures] Unsupported:", unsupported);
-	}
-	return unsupported;
-}
-
 module.exports = {
-	walkAST,
-	getUnsupportedFeatures
+	walkAST
 };
