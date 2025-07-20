@@ -1,0 +1,18 @@
+{
+	"esnext.number.clamp": "esnext.number.clamp",
+	"esnext.number.from-string": "esnext.number.from-string",
+	"esnext.number.range": "esnext.number.range",
+	"es.number.constructor": "es.number.constructor",
+	"es.number.epsilon": "es.number.epsilon",
+	"es.number.is-finite": "es.number.is-finite",
+	"es.number.is-integer": "es.number.is-integer",
+	"es.number.is-nan": "es.number.is-nan",
+	"es.number.is-safe-integer": "es.number.is-safe-integer",
+	"es.number.max-safe-integer": "es.number.max-safe-integer",
+	"es.number.min-safe-integer": "es.number.min-safe-integer",
+	"es.number.parse-float": "es.number.parse-float",
+	"es.number.parse-int": "es.number.parse-int",
+	"es.number.to-exponential": "Number.prototype.toExponential",
+	"es.number.to-fixed": "Number.prototype.toFixed",
+	"es.number.to-precision": "Number.prototype.toPrecision"
+}

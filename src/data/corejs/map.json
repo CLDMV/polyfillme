@@ -1,0 +1,9 @@
+{
+	"es.map.group-by": "es.map.group-by",
+	"esnext.map.delete-all": "esnext.map.delete-all",
+	"esnext.map.emplace": "esnext.map.emplace",
+	"esnext.map.every": "esnext.map.every",
+	"esnext.map.filter": "esnext.map.filter",
+	"esnext.map.find": "esnext.map.find",
+	"esnext.map.find-key": "esnext.map.find-key"
+}

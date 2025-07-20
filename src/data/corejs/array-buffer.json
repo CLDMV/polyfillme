@@ -1,0 +1,32 @@
+{
+	"es.array-buffer.constructor": {
+		"human": "ArrayBuffer",
+		"es": "es3",
+		"browsers": ["chrome 4", "edge 12", "firefox 3.6", "ie 10", "safari 5.1"]
+	},
+	"es.array-buffer.is-view": {
+		"human": "ArrayBuffer.isView",
+		"es": "es6",
+		"browsers": ["chrome 32", "edge 12", "firefox 29", "ie 11", "safari 7"]
+	},
+	"es.array-buffer.slice": {
+		"human": "ArrayBuffer.prototype.slice",
+		"es": "es6",
+		"browsers": ["chrome 7", "edge 12", "firefox 15", "ie 10", "safari 6"]
+	},
+	"es.array-buffer.detached": {
+		"human": "ArrayBuffer.prototype.detached",
+		"es": "es2022",
+		"browsers": ["chrome 102", "edge 102", "firefox 102", "safari 15.5"]
+	},
+	"es.array-buffer.transfer": {
+		"human": "ArrayBuffer.prototype.transfer",
+		"es": "es2022",
+		"browsers": ["chrome 102", "edge 102", "firefox 102", "safari 15.5"]
+	},
+	"es.array-buffer.transfer-to-fixed-length": {
+		"human": "ArrayBuffer.prototype.transferToFixedLength",
+		"es": "es2022",
+		"browsers": ["chrome 102", "edge 102", "firefox 102", "safari 15.5"]
+	}
+}

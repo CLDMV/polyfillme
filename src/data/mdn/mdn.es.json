@@ -1,0 +1,4531 @@
+{
+	"es1": {
+		"builtins.Array": {
+			"human": "Array",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Array.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "1",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.Boolean": {
+			"human": "Boolean",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Boolean.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.Date": {
+			"human": "Date",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Date.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.Function": {
+			"human": "Function",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Function.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.Infinity": {
+			"human": "Infinity",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-value-properties-of-the-global-object-infinity",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Infinity.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.Math": {
+			"human": "Math",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math-object",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Math.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.NaN": {
+			"human": "NaN",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-value-properties-of-the-global-object-nan",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/NaN.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.Number": {
+			"human": "Number",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Number.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.Object": {
+			"human": "Object",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Object.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "1",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.String": {
+			"human": "String",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/String.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "1",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.escape": {
+			"human": "escape",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-escape-string",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/escape",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/escape.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.eval": {
+			"human": "eval",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/eval",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/eval.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.isFinite": {
+			"human": "isFinite",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-isfinite-number",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/isFinite",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/isFinite.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.isNaN": {
+			"human": "isNaN",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-isnan-number",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/isNaN",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/isNaN.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.parseFloat": {
+			"human": "parseFloat",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-parsefloat-string",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseFloat",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/parseFloat.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.parseInt": {
+			"human": "parseInt",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-parseint-string-radix",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseInt",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/parseInt.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.undefined": {
+			"human": "undefined",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-undefined",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/undefined.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.unescape": {
+			"human": "unescape",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-unescape-string",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/unescape",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/unescape.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"functions": {
+			"human": "functions",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-function-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/functions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.addition": {
+			"human": "addition",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-addition-operator-plus",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Addition",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/addition.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.addition_assignment": {
+			"human": "addition_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Addition_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/addition_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.assignment": {
+			"human": "assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.bitwise_and": {
+			"human": "bitwise_and",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseANDExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Bitwise_AND",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/bitwise_and.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.bitwise_and_assignment": {
+			"human": "bitwise_and_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/bitwise_and_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.bitwise_not": {
+			"human": "bitwise_not",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-bitwise-not-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/bitwise_not.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.bitwise_or": {
+			"human": "bitwise_or",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseORExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Bitwise_OR",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/bitwise_or.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.bitwise_or_assignment": {
+			"human": "bitwise_or_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/bitwise_or_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.bitwise_xor": {
+			"human": "bitwise_xor",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-BitwiseXORExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/bitwise_xor.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.bitwise_xor_assignment": {
+			"human": "bitwise_xor_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/bitwise_xor_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.comma": {
+			"human": "comma",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-comma-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_operator",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/comma.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.conditional": {
+			"human": "conditional",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-conditional-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_operator",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/conditional.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.decrement": {
+			"human": "decrement",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-decrement-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Decrement",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/decrement.json"
+			},
+			"browsers": {
+				"chrome": "2",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "4",
+				"safari_ios": "3.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "3.2"
+			}
+		},
+		"operators.delete": {
+			"human": "delete",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-delete-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/delete",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/delete.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "9",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.division": {
+			"human": "division",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-multiplicative-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Division",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/division.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.division_assignment": {
+			"human": "division_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Division_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/division_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.equality": {
+			"human": "equality",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-equality-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Equality",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/equality.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.function": {
+			"human": "function",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-function-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/function",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/function.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.greater_than": {
+			"human": "greater_than",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Greater_than",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/greater_than.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.greater_than_or_equal": {
+			"human": "greater_than_or_equal",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/greater_than_or_equal.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.grouping": {
+			"human": "grouping",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-grouping-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Grouping",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/grouping.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.in": {
+			"human": "in",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/in",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/in.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.increment": {
+			"human": "increment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-postfix-increment-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Increment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/increment.json"
+			},
+			"browsers": {
+				"chrome": "2",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "4",
+				"safari_ios": "3.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "3.2"
+			}
+		},
+		"operators.inequality": {
+			"human": "inequality",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-equality-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Inequality",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/inequality.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.left_shift": {
+			"human": "left_shift",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-left-shift-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Left_shift",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/left_shift.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.left_shift_assignment": {
+			"human": "left_shift_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/left_shift_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.less_than": {
+			"human": "less_than",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Less_than",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/less_than.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.less_than_or_equal": {
+			"human": "less_than_or_equal",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/less_than_or_equal.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.logical_and": {
+			"human": "logical_and",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-LogicalANDExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/logical_and.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.logical_not": {
+			"human": "logical_not",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-logical-not-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/logical_not.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.logical_or": {
+			"human": "logical_or",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-LogicalORExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/logical_or.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.multiplication": {
+			"human": "multiplication",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-multiplicative-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Multiplication",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/multiplication.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.multiplication_assignment": {
+			"human": "multiplication_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/multiplication_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.new": {
+			"human": "new",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-new-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/new.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.null": {
+			"human": "null",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/overview.html#sec-null-value",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/null",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/null.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.property_accessors": {
+			"human": "property_accessors",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-property-accessors",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Property_accessors",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/property_accessors.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.remainder": {
+			"human": "remainder",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-multiplicative-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Remainder",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/remainder.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.remainder_assignment": {
+			"human": "remainder_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Remainder_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/remainder_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.right_shift": {
+			"human": "right_shift",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-signed-right-shift-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Right_shift",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/right_shift.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.right_shift_assignment": {
+			"human": "right_shift_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/right_shift_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.subtraction": {
+			"human": "subtraction",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-subtraction-operator-minus",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Subtraction",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/subtraction.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.subtraction_assignment": {
+			"human": "subtraction_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/subtraction_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.this": {
+			"human": "this",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-this-keyword",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/this",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/this.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "9.5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.typeof": {
+			"human": "typeof",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-typeof-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/typeof.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.unary_negation": {
+			"human": "unary_negation",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unary-minus-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Unary_negation",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/unary_negation.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.unary_plus": {
+			"human": "unary_plus",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unary-plus-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Unary_plus",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/unary_plus.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.unsigned_right_shift": {
+			"human": "unsigned_right_shift",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-unsigned-right-shift-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/unsigned_right_shift.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.unsigned_right_shift_assignment": {
+			"human": "unsigned_right_shift_assignment",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/unsigned_right_shift_assignment.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "3",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "3",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.void": {
+			"human": "void",
+			"es": "es1",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-void-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/void",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/void.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "3.1",
+				"safari_ios": "3",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "3"
+			}
+		}
+	},
+	"es3": {
+		"builtins.Error": {
+			"human": "Error",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Error.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "6",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.EvalError": {
+			"human": "EvalError",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-evalerror",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/EvalError.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.RangeError": {
+			"human": "RangeError",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/RangeError.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.ReferenceError": {
+			"human": "ReferenceError",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-referenceerror",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/ReferenceError.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.RegExp": {
+			"human": "RegExp",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/RegExp.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.SyntaxError": {
+			"human": "SyntaxError",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/SyntaxError.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.TypeError": {
+			"human": "TypeError",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypeError.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.URIError": {
+			"human": "URIError",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-urierror",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/URIError.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.decodeURI": {
+			"human": "decodeURI",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuri-encodeduri",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/decodeURI",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/decodeURI.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "7",
+				"opera_android": "10.1",
+				"safari": "1.1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.decodeURIComponent": {
+			"human": "decodeURIComponent",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuricomponent-encodeduricomponent",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/decodeURIComponent.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "7",
+				"opera_android": "10.1",
+				"safari": "1.1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.encodeURI": {
+			"human": "encodeURI",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuri-uri",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeURI",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/encodeURI.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "7",
+				"opera_android": "10.1",
+				"safari": "1.1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"builtins.encodeURIComponent": {
+			"human": "encodeURIComponent",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuricomponent-uricomponent",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/encodeURIComponent.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5.5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "7",
+				"opera_android": "10.1",
+				"safari": "1.1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.backreference": {
+			"human": "backreference",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-DecimalEscape",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Backreference",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.capturing_group": {
+			"human": "capturing_group",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Atom",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Capturing_group",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.character_class": {
+			"human": "character_class",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-CharacterClass",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Character_class",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.character_class_escape": {
+			"human": "character_class_escape",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-CharacterClassEscape",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Character_class_escape",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.character_escape": {
+			"human": "character_escape",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-CharacterEscape",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Character_escape",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.disjunction": {
+			"human": "disjunction",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Disjunction",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Disjunction",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.input_boundary_assertion": {
+			"human": "input_boundary_assertion",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Assertion",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Input_boundary_assertion",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.literal_character": {
+			"human": "literal_character",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-PatternCharacter",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Literal_character",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.lookahead_assertion": {
+			"human": "lookahead_assertion",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Assertion",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.non_capturing_group": {
+			"human": "non_capturing_group",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Atom",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Non-capturing_group",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.quantifier": {
+			"human": "quantifier",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Quantifier",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Quantifier",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.wildcard": {
+			"human": "wildcard",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Atom",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Wildcard",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.word_boundary_assertion": {
+			"human": "word_boundary_assertion",
+			"es": "es3",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Assertion",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Word_boundary_assertion",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "5",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		}
+	},
+	"es5": {
+		"builtins.JSON": {
+			"human": "JSON",
+			"es": "es5",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/JSON.json"
+			},
+			"browsers": {
+				"chrome": "3",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "3.5",
+				"firefox_android": "4",
+				"ie": "8",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "10.5",
+				"opera_android": "11",
+				"safari": "4",
+				"safari_ios": "4",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "4"
+			}
+		}
+	},
+	"es2015": {
+		"builtins.ArrayBuffer": {
+			"human": "ArrayBuffer",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/ArrayBuffer.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.DataView": {
+			"human": "DataView",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/DataView.json"
+			},
+			"browsers": {
+				"chrome": "9",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "15",
+				"firefox_android": "15",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "12.1",
+				"opera_android": "12.1",
+				"safari": "5.1",
+				"safari_ios": "5",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "5"
+			}
+		},
+		"builtins.Float32Array": {
+			"human": "Float32Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float32Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Float64Array": {
+			"human": "Float64Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float64Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Generator": {
+			"human": "Generator",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Generator.json"
+			},
+			"browsers": {
+				"chrome": "39",
+				"chrome_android": "39",
+				"deno": "1.0",
+				"edge": "13",
+				"firefox": "26",
+				"firefox_android": "26",
+				"ie": null,
+				"nodejs": "4.0.0",
+				"oculus": "5.0",
+				"opera": "26",
+				"opera_android": "26",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "4.0",
+				"webview_android": "39",
+				"webview_ios": "10"
+			}
+		},
+		"builtins.GeneratorFunction": {
+			"human": "GeneratorFunction",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/GeneratorFunction.json"
+			},
+			"browsers": {
+				"chrome": "39",
+				"chrome_android": "39",
+				"deno": "1.0",
+				"edge": "13",
+				"firefox": "26",
+				"firefox_android": "26",
+				"ie": null,
+				"nodejs": "4.0.0",
+				"oculus": "5.0",
+				"opera": "26",
+				"opera_android": "26",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "4.0",
+				"webview_android": "39",
+				"webview_ios": "10"
+			}
+		},
+		"builtins.Int16Array": {
+			"human": "Int16Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int16Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Int32Array": {
+			"human": "Int32Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int32Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Int8Array": {
+			"human": "Int8Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Int8Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Iterator": {
+			"human": "Iterator",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%iteratorprototype%-object",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Iterator.json"
+			},
+			"browsers": {
+				"chrome": "38",
+				"chrome_android": "38",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "17",
+				"firefox_android": "17",
+				"ie": null,
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "25",
+				"opera_android": "25",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "3.0",
+				"webview_android": "38",
+				"webview_ios": "10"
+			}
+		},
+		"builtins.Map": {
+			"human": "Map",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Map.json"
+			},
+			"browsers": {
+				"chrome": "38",
+				"chrome_android": "38",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "13",
+				"firefox_android": "14",
+				"ie": "11",
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "25",
+				"opera_android": "25",
+				"safari": "8",
+				"safari_ios": "8",
+				"samsunginternet_android": "3.0",
+				"webview_android": "38",
+				"webview_ios": "8"
+			}
+		},
+		"builtins.Promise": {
+			"human": "Promise",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Promise.json"
+			},
+			"browsers": {
+				"chrome": "32",
+				"chrome_android": "32",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "29",
+				"firefox_android": "29",
+				"ie": null,
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "19",
+				"opera_android": "19",
+				"safari": "8",
+				"safari_ios": "8",
+				"samsunginternet_android": "2.0",
+				"webview_android": "4.4.3",
+				"webview_ios": "8"
+			}
+		},
+		"builtins.Proxy": {
+			"human": "Proxy",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/reflection.html#sec-proxy-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Proxy.json"
+			},
+			"browsers": {
+				"chrome": "49",
+				"chrome_android": "49",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "18",
+				"firefox_android": "18",
+				"ie": null,
+				"nodejs": "6.0.0",
+				"oculus": "5.0",
+				"opera": "36",
+				"opera_android": "36",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "5.0",
+				"webview_android": "49",
+				"webview_ios": "10"
+			}
+		},
+		"builtins.Reflect": {
+			"human": "Reflect",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect-object",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Reflect.json"
+			},
+			"browsers": {
+				"chrome": "49",
+				"chrome_android": "49",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "42",
+				"firefox_android": "42",
+				"ie": null,
+				"nodejs": "6.0.0",
+				"oculus": "5.0",
+				"opera": "36",
+				"opera_android": "36",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "5.0",
+				"webview_android": "49",
+				"webview_ios": "10"
+			}
+		},
+		"builtins.Set": {
+			"human": "Set",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Set.json"
+			},
+			"browsers": {
+				"chrome": "38",
+				"chrome_android": "38",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "13",
+				"firefox_android": "14",
+				"ie": "11",
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "25",
+				"opera_android": "25",
+				"safari": "8",
+				"safari_ios": "8",
+				"samsunginternet_android": "3.0",
+				"webview_android": "38",
+				"webview_ios": "8"
+			}
+		},
+		"builtins.Symbol": {
+			"human": "Symbol",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Symbol.json"
+			},
+			"browsers": {
+				"chrome": "38",
+				"chrome_android": "38",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "36",
+				"firefox_android": "36",
+				"ie": null,
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "25",
+				"opera_android": "25",
+				"safari": "9",
+				"safari_ios": "9",
+				"samsunginternet_android": "3.0",
+				"webview_android": "38",
+				"webview_ios": "9"
+			}
+		},
+		"builtins.TypedArray": {
+			"human": "TypedArray",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/TypedArray.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Uint16Array": {
+			"human": "Uint16Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint16Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Uint32Array": {
+			"human": "Uint32Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint32Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Uint8Array": {
+			"human": "Uint8Array",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8Array.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.Uint8ClampedArray": {
+			"human": "Uint8ClampedArray",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Uint8ClampedArray.json"
+			},
+			"browsers": {
+				"chrome": "7",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "4",
+				"firefox_android": "4",
+				"ie": "10",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "11.6",
+				"opera_android": "12",
+				"safari": "5.1",
+				"safari_ios": "4.2",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4",
+				"webview_ios": "4.2"
+			}
+		},
+		"builtins.WeakMap": {
+			"human": "WeakMap",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakmap-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/WeakMap.json"
+			},
+			"browsers": {
+				"chrome": "36",
+				"chrome_android": "36",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "6",
+				"firefox_android": "6",
+				"ie": "11",
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "23",
+				"opera_android": "24",
+				"safari": "8",
+				"safari_ios": "8",
+				"samsunginternet_android": "3.0",
+				"webview_android": "37",
+				"webview_ios": "8"
+			}
+		},
+		"builtins.WeakSet": {
+			"human": "WeakSet",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/WeakSet.json"
+			},
+			"browsers": {
+				"chrome": "36",
+				"chrome_android": "36",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "34",
+				"firefox_android": "34",
+				"ie": null,
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "23",
+				"opera_android": "24",
+				"safari": "9",
+				"safari_ios": "9",
+				"samsunginternet_android": "3.0",
+				"webview_android": "37",
+				"webview_ios": "9"
+			}
+		},
+		"classes": {
+			"human": "classes",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/classes.json"
+			},
+			"browsers": {
+				"chrome": "49",
+				"chrome_android": "49",
+				"deno": "1.0",
+				"edge": "13",
+				"firefox": "45",
+				"firefox_android": "45",
+				"ie": null,
+				"nodejs": "6.0.0",
+				"oculus": "5.0",
+				"opera": "36",
+				"opera_android": "36",
+				"safari": "9",
+				"safari_ios": "9",
+				"samsunginternet_android": "5.0",
+				"webview_android": "49",
+				"webview_ios": "9"
+			}
+		},
+		"operators.class": {
+			"human": "class",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-class-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/class",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/class.json"
+			},
+			"browsers": {
+				"chrome": "42",
+				"chrome_android": "42",
+				"deno": "1.0",
+				"edge": "13",
+				"firefox": "45",
+				"firefox_android": "45",
+				"ie": null,
+				"nodejs": "6.0.0",
+				"oculus": "5.0",
+				"opera": "29",
+				"opera_android": "29",
+				"safari": "7",
+				"safari_ios": "7",
+				"samsunginternet_android": "4.0",
+				"webview_android": "42",
+				"webview_ios": "7"
+			}
+		},
+		"operators.destructuring": {
+			"human": "destructuring",
+			"es": "es2015",
+			"urls": {
+				"spec": [
+					"https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-destructuring-assignment",
+					"https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-destructuring-binding-patterns"
+				],
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Destructuring",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/destructuring.json"
+			},
+			"browsers": {
+				"chrome": "49",
+				"chrome_android": "49",
+				"deno": "1.0",
+				"edge": "14",
+				"firefox": "41",
+				"firefox_android": "41",
+				"ie": null,
+				"nodejs": "6.0.0",
+				"oculus": "5.0",
+				"opera": "36",
+				"opera_android": "36",
+				"safari": "8",
+				"safari_ios": "8",
+				"samsunginternet_android": "5.0",
+				"webview_android": "49",
+				"webview_ios": "8"
+			}
+		},
+		"operators.generator_function": {
+			"human": "generator_function",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-generator-function-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/function*",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/generator_function.json"
+			},
+			"browsers": {
+				"chrome": "49",
+				"chrome_android": "49",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "26",
+				"firefox_android": "26",
+				"ie": null,
+				"nodejs": "4.0.0",
+				"oculus": "5.0",
+				"opera": "36",
+				"opera_android": "36",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "5.0",
+				"webview_android": "49",
+				"webview_ios": "10"
+			}
+		},
+		"operators.new_target": {
+			"human": "new_target",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-built-in-function-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new.target",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/new_target.json"
+			},
+			"browsers": {
+				"chrome": "46",
+				"chrome_android": "46",
+				"deno": "1.0",
+				"edge": "13",
+				"firefox": "41",
+				"firefox_android": "41",
+				"ie": null,
+				"nodejs": "5.0.0",
+				"oculus": "5.0",
+				"opera": "33",
+				"opera_android": "33",
+				"safari": "11",
+				"safari_ios": "11",
+				"samsunginternet_android": "5.0",
+				"webview_android": "46",
+				"webview_ios": "11"
+			}
+		},
+		"operators.spread": {
+			"human": "spread",
+			"es": "es2015",
+			"urls": {
+				"spec": [
+					"https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-SpreadElement",
+					"https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ArgumentList",
+					"https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-PropertyDefinition"
+				],
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/spread.json"
+			},
+			"browsers": {
+				"chrome": "46",
+				"chrome_android": "46",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "16",
+				"firefox_android": "16",
+				"ie": null,
+				"nodejs": "5.0.0",
+				"oculus": "5.0",
+				"opera": "37",
+				"opera_android": "37",
+				"safari": "8",
+				"safari_ios": "8",
+				"samsunginternet_android": "5.0",
+				"webview_android": "46",
+				"webview_ios": "8"
+			}
+		},
+		"operators.super": {
+			"human": "super",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-super-keyword",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/super",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/super.json"
+			},
+			"browsers": {
+				"chrome": "42",
+				"chrome_android": "42",
+				"deno": "1.0",
+				"edge": "13",
+				"firefox": "45",
+				"firefox_android": "45",
+				"ie": null,
+				"nodejs": "6.0.0",
+				"oculus": "5.0",
+				"opera": "29",
+				"opera_android": "29",
+				"safari": "7",
+				"safari_ios": "7",
+				"samsunginternet_android": "4.0",
+				"webview_android": "42",
+				"webview_ios": "7"
+			}
+		},
+		"operators.yield": {
+			"human": "yield",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#prod-YieldExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/yield",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/yield.json"
+			},
+			"browsers": {
+				"chrome": "39",
+				"chrome_android": "39",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "26",
+				"firefox_android": "26",
+				"ie": null,
+				"nodejs": "4.0.0",
+				"oculus": "5.0",
+				"opera": "26",
+				"opera_android": "26",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "4.0",
+				"webview_android": "39",
+				"webview_ios": "10"
+			}
+		},
+		"operators.yield_star": {
+			"human": "yield_star",
+			"es": "es2015",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-generator-function-definitions-runtime-semantics-evaluation",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/yield*",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/yield_star.json"
+			},
+			"browsers": {
+				"chrome": "39",
+				"chrome_android": "39",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "27",
+				"firefox_android": "27",
+				"ie": null,
+				"nodejs": "4.0.0",
+				"oculus": "5.0",
+				"opera": "26",
+				"opera_android": "26",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "4.0",
+				"webview_android": "39",
+				"webview_ios": "10"
+			}
+		}
+	},
+	"es2016": {
+		"operators.exponentiation": {
+			"human": "exponentiation",
+			"es": "es2016",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-exp-operator",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Exponentiation",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/exponentiation.json"
+			},
+			"browsers": {
+				"chrome": "52",
+				"chrome_android": "52",
+				"deno": "1.0",
+				"edge": "14",
+				"firefox": "52",
+				"firefox_android": "52",
+				"ie": null,
+				"nodejs": "7.0.0",
+				"oculus": "5.0",
+				"opera": "39",
+				"opera_android": "41",
+				"safari": "10.1",
+				"safari_ios": "10.3",
+				"samsunginternet_android": "6.0",
+				"webview_android": "51",
+				"webview_ios": "10.3"
+			}
+		},
+		"operators.exponentiation_assignment": {
+			"human": "exponentiation_assignment",
+			"es": "es2016",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/exponentiation_assignment.json"
+			},
+			"browsers": {
+				"chrome": "52",
+				"chrome_android": "52",
+				"deno": "1.0",
+				"edge": "14",
+				"firefox": "52",
+				"firefox_android": "52",
+				"ie": null,
+				"nodejs": "7.0.0",
+				"oculus": "5.0",
+				"opera": "39",
+				"opera_android": "41",
+				"safari": "10.1",
+				"safari_ios": "10.3",
+				"samsunginternet_android": "6.0",
+				"webview_android": "51",
+				"webview_ios": "10.3"
+			}
+		}
+	},
+	"es2017": {
+		"builtins.AsyncFunction": {
+			"human": "AsyncFunction",
+			"es": "es2017",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/AsyncFunction.json"
+			},
+			"browsers": {
+				"chrome": "55",
+				"chrome_android": "55",
+				"deno": "1.0",
+				"edge": "15",
+				"firefox": "52",
+				"firefox_android": "52",
+				"ie": null,
+				"nodejs": "7.6.0",
+				"oculus": "5.0",
+				"opera": "42",
+				"opera_android": "42",
+				"safari": "10.1",
+				"safari_ios": "10.3",
+				"samsunginternet_android": "6.0",
+				"webview_android": "55",
+				"webview_ios": "10.3"
+			}
+		},
+		"builtins.AsyncGenerator": {
+			"human": "AsyncGenerator",
+			"es": "es2017",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/AsyncGenerator.json"
+			},
+			"browsers": {
+				"chrome": "63",
+				"chrome_android": "63",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "55",
+				"firefox_android": "55",
+				"ie": null,
+				"nodejs": "10.0.0",
+				"oculus": "5.0",
+				"opera": "50",
+				"opera_android": "46",
+				"safari": "12",
+				"safari_ios": "12",
+				"samsunginternet_android": "8.0",
+				"webview_android": "63",
+				"webview_ios": "12"
+			}
+		},
+		"builtins.AsyncGeneratorFunction": {
+			"human": "AsyncGeneratorFunction",
+			"es": "es2017",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/AsyncGeneratorFunction.json"
+			},
+			"browsers": {
+				"chrome": "63",
+				"chrome_android": "63",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "55",
+				"firefox_android": "55",
+				"ie": null,
+				"nodejs": "10.0.0",
+				"oculus": "5.0",
+				"opera": "50",
+				"opera_android": "46",
+				"safari": "12",
+				"safari_ios": "12",
+				"samsunginternet_android": "8.0",
+				"webview_android": "63",
+				"webview_ios": "12"
+			}
+		},
+		"builtins.Atomics": {
+			"human": "Atomics",
+			"es": "es2017",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics-object",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Atomics",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Atomics.json"
+			},
+			"browsers": {
+				"chrome": "68",
+				"chrome_android": "89",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "78",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "8.10.0",
+				"oculus": "15.0",
+				"opera": "55",
+				"opera_android": "63",
+				"safari": "15.2",
+				"safari_ios": "15.2",
+				"samsunginternet_android": "15.0",
+				"webview_android": "89",
+				"webview_ios": "15.2"
+			}
+		},
+		"builtins.SharedArrayBuffer": {
+			"human": "SharedArrayBuffer",
+			"es": "es2017",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/SharedArrayBuffer.json"
+			},
+			"browsers": {
+				"chrome": "68",
+				"chrome_android": "89",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "79",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "8.10.0",
+				"oculus": "15.0",
+				"opera": "55",
+				"opera_android": "63",
+				"safari": "15.2",
+				"safari_ios": "15.2",
+				"samsunginternet_android": "15.0",
+				"webview_android": null,
+				"webview_ios": "15.2"
+			}
+		}
+	},
+	"es2018": {
+		"builtins.AsyncIterator": {
+			"human": "AsyncIterator",
+			"es": "es2018",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asynciteratorprototype",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/AsyncIterator.json"
+			},
+			"browsers": {
+				"chrome": "63",
+				"chrome_android": "63",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "57",
+				"firefox_android": "57",
+				"ie": null,
+				"nodejs": "10.0.0",
+				"oculus": "5.0",
+				"opera": "50",
+				"opera_android": "46",
+				"safari": "11.1",
+				"safari_ios": "11.3",
+				"samsunginternet_android": "8.0",
+				"webview_android": "63",
+				"webview_ios": "11.3"
+			}
+		}
+	},
+	"es2020": {
+		"builtins.BigInt": {
+			"human": "BigInt",
+			"es": "es2020",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/BigInt.json"
+			},
+			"browsers": {
+				"chrome": "67",
+				"chrome_android": "67",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "68",
+				"firefox_android": "68",
+				"ie": null,
+				"nodejs": "10.4.0",
+				"oculus": "6.0",
+				"opera": "54",
+				"opera_android": "48",
+				"safari": "14",
+				"safari_ios": "14",
+				"samsunginternet_android": "9.0",
+				"webview_android": "67",
+				"webview_ios": "14"
+			}
+		},
+		"builtins.BigInt64Array": {
+			"human": "BigInt64Array",
+			"es": "es2020",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/BigInt64Array.json"
+			},
+			"browsers": {
+				"chrome": "67",
+				"chrome_android": "67",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "68",
+				"firefox_android": "68",
+				"ie": null,
+				"nodejs": "10.4.0",
+				"oculus": "6.0",
+				"opera": "54",
+				"opera_android": "48",
+				"safari": "15",
+				"safari_ios": "15",
+				"samsunginternet_android": "9.0",
+				"webview_android": "67",
+				"webview_ios": "15"
+			}
+		},
+		"builtins.BigUint64Array": {
+			"human": "BigUint64Array",
+			"es": "es2020",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigUint64Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/BigUint64Array.json"
+			},
+			"browsers": {
+				"chrome": "67",
+				"chrome_android": "67",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "68",
+				"firefox_android": "68",
+				"ie": null,
+				"nodejs": "10.4.0",
+				"oculus": "6.0",
+				"opera": "54",
+				"opera_android": "48",
+				"safari": "15",
+				"safari_ios": "15",
+				"samsunginternet_android": "9.0",
+				"webview_android": "67",
+				"webview_ios": "15"
+			}
+		},
+		"builtins.globalThis": {
+			"human": "globalThis",
+			"es": "es2020",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-globalthis",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/globalThis",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/globalThis.json"
+			},
+			"browsers": {
+				"chrome": "71",
+				"chrome_android": "71",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "65",
+				"firefox_android": "65",
+				"ie": null,
+				"nodejs": "12.0.0",
+				"oculus": "6.0",
+				"opera": "58",
+				"opera_android": "50",
+				"safari": "12.1",
+				"safari_ios": "12.2",
+				"samsunginternet_android": "10.0",
+				"webview_android": "71",
+				"webview_ios": "12.2"
+			}
+		},
+		"operators.nullish_coalescing": {
+			"human": "nullish_coalescing",
+			"es": "es2020",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-CoalesceExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/nullish_coalescing.json"
+			},
+			"browsers": {
+				"chrome": "80",
+				"chrome_android": "80",
+				"deno": "1.0",
+				"edge": "80",
+				"firefox": "72",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "14.0.0",
+				"oculus": "9.0",
+				"opera": "67",
+				"opera_android": "57",
+				"safari": "13.1",
+				"safari_ios": "13.4",
+				"samsunginternet_android": "13.0",
+				"webview_android": "80",
+				"webview_ios": "13.4"
+			}
+		},
+		"operators.nullish_coalescing_assignment": {
+			"human": "nullish_coalescing_assignment",
+			"es": "es2020",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/nullish_coalescing_assignment.json"
+			},
+			"browsers": {
+				"chrome": "85",
+				"chrome_android": "85",
+				"deno": "1.2",
+				"edge": "85",
+				"firefox": "79",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "15.0.0",
+				"oculus": "12.0",
+				"opera": "71",
+				"opera_android": "60",
+				"safari": "14",
+				"safari_ios": "14",
+				"samsunginternet_android": "14.0",
+				"webview_android": "85",
+				"webview_ios": "14"
+			}
+		},
+		"operators.optional_chaining": {
+			"human": "optional_chaining",
+			"es": "es2020",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-OptionalExpression",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Optional_chaining",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/optional_chaining.json"
+			},
+			"browsers": {
+				"chrome": "80",
+				"chrome_android": "80",
+				"deno": "1.0",
+				"edge": "80",
+				"firefox": "74",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "14.0.0",
+				"oculus": "9.0",
+				"opera": "67",
+				"opera_android": "57",
+				"safari": "13.1",
+				"safari_ios": "13.4",
+				"samsunginternet_android": "13.0",
+				"webview_android": "80",
+				"webview_ios": "13.4"
+			}
+		}
+	},
+	"es2021": {
+		"builtins.AggregateError": {
+			"human": "AggregateError",
+			"es": "es2021",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/AggregateError.json"
+			},
+			"browsers": {
+				"chrome": "85",
+				"chrome_android": "85",
+				"deno": "1.2",
+				"edge": "85",
+				"firefox": "79",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "15.0.0",
+				"oculus": "12.0",
+				"opera": "71",
+				"opera_android": "60",
+				"safari": "14",
+				"safari_ios": "14",
+				"samsunginternet_android": "14.0",
+				"webview_android": "85",
+				"webview_ios": "14"
+			}
+		},
+		"builtins.FinalizationRegistry": {
+			"human": "FinalizationRegistry",
+			"es": "es2021",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/managing-memory.html#sec-finalization-registry-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/FinalizationRegistry.json"
+			},
+			"browsers": {
+				"chrome": "84",
+				"chrome_android": "84",
+				"deno": "1.0",
+				"edge": "84",
+				"firefox": "79",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "14.6.0",
+				"oculus": "11.0",
+				"opera": "70",
+				"opera_android": "60",
+				"safari": "14.1",
+				"safari_ios": "14.5",
+				"samsunginternet_android": "14.0",
+				"webview_android": "84",
+				"webview_ios": "14.5"
+			}
+		},
+		"builtins.WeakRef": {
+			"human": "WeakRef",
+			"es": "es2021",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/managing-memory.html#sec-weak-ref-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakRef",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/WeakRef.json"
+			},
+			"browsers": {
+				"chrome": "84",
+				"chrome_android": "84",
+				"deno": "1.0",
+				"edge": "84",
+				"firefox": "79",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "14.6.0",
+				"oculus": "11.0",
+				"opera": "70",
+				"opera_android": "60",
+				"safari": "14.1",
+				"safari_ios": "14.5",
+				"samsunginternet_android": "14.0",
+				"webview_android": "84",
+				"webview_ios": "14.5"
+			}
+		}
+	},
+	"unknown": {
+		"builtins.AsyncDisposableStack": {
+			"human": "AsyncDisposableStack",
+			"es": "unknown",
+			"urls": {
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/AsyncDisposableStack.json"
+			},
+			"browsers": {
+				"chrome": "134",
+				"chrome_android": "134",
+				"deno": null,
+				"edge": "134",
+				"firefox": "141",
+				"firefox_android": "141",
+				"ie": null,
+				"nodejs": null,
+				"oculus": null,
+				"opera": "119",
+				"opera_android": "88",
+				"safari": null,
+				"safari_ios": null,
+				"samsunginternet_android": null,
+				"webview_android": "134",
+				"webview_ios": null
+			}
+		},
+		"builtins.DisposableStack": {
+			"human": "DisposableStack",
+			"es": "unknown",
+			"urls": {
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/DisposableStack.json"
+			},
+			"browsers": {
+				"chrome": "134",
+				"chrome_android": "134",
+				"deno": null,
+				"edge": "134",
+				"firefox": "141",
+				"firefox_android": "141",
+				"ie": null,
+				"nodejs": null,
+				"oculus": null,
+				"opera": "119",
+				"opera_android": "88",
+				"safari": null,
+				"safari_ios": null,
+				"samsunginternet_android": null,
+				"webview_android": "134",
+				"webview_ios": null
+			}
+		},
+		"builtins.Float16Array": {
+			"human": "Float16Array",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/global-object.html#sec-float16array",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float16Array",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Float16Array.json"
+			},
+			"browsers": {
+				"chrome": "135",
+				"chrome_android": "135",
+				"deno": "1.43",
+				"edge": "135",
+				"firefox": "129",
+				"firefox_android": "129",
+				"ie": null,
+				"nodejs": "24.0.0",
+				"oculus": null,
+				"opera": "120",
+				"opera_android": "89",
+				"safari": "18.2",
+				"safari_ios": "18.2",
+				"samsunginternet_android": null,
+				"webview_android": "135",
+				"webview_ios": "18.2"
+			}
+		},
+		"builtins.InternalError": {
+			"human": "InternalError",
+			"es": "unknown",
+			"urls": {
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/InternalError.json"
+			},
+			"browsers": {
+				"chrome": null,
+				"chrome_android": null,
+				"deno": null,
+				"edge": null,
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": null,
+				"nodejs": null,
+				"oculus": null,
+				"opera": null,
+				"opera_android": null,
+				"safari": null,
+				"safari_ios": null,
+				"samsunginternet_android": null,
+				"webview_android": null,
+				"webview_ios": null
+			}
+		},
+		"builtins.Intl": {
+			"human": "Intl",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma402/#intl-object",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Intl.json"
+			},
+			"browsers": {
+				"chrome": "24",
+				"chrome_android": "25",
+				"deno": "1.8",
+				"edge": "12",
+				"firefox": "29",
+				"firefox_android": "56",
+				"ie": "11",
+				"nodejs": "0.12.0",
+				"oculus": "5.0",
+				"opera": "15",
+				"opera_android": "14",
+				"safari": "10",
+				"safari_ios": "10",
+				"samsunginternet_android": "1.5",
+				"webview_android": "4.4",
+				"webview_ios": "10"
+			}
+		},
+		"builtins.SuppressedError": {
+			"human": "SuppressedError",
+			"es": "unknown",
+			"urls": {
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/SuppressedError.json"
+			},
+			"browsers": {
+				"chrome": "134",
+				"chrome_android": "134",
+				"deno": null,
+				"edge": "134",
+				"firefox": "141",
+				"firefox_android": "141",
+				"ie": null,
+				"nodejs": null,
+				"oculus": null,
+				"opera": "119",
+				"opera_android": "88",
+				"safari": null,
+				"safari_ios": null,
+				"samsunginternet_android": null,
+				"webview_android": "134",
+				"webview_ios": null
+			}
+		},
+		"builtins.Temporal": {
+			"human": "Temporal",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/proposal-temporal/#sec-temporal-objects",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/builtins/Temporal.json"
+			},
+			"browsers": {
+				"chrome": null,
+				"chrome_android": null,
+				"deno": "1.40",
+				"edge": null,
+				"firefox": "139",
+				"firefox_android": "139",
+				"ie": null,
+				"nodejs": null,
+				"oculus": null,
+				"opera": null,
+				"opera_android": null,
+				"safari": "preview",
+				"safari_ios": null,
+				"samsunginternet_android": null,
+				"webview_android": null,
+				"webview_ios": null
+			}
+		},
+		"operators.async_function": {
+			"human": "async_function",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/async_function",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/async_function.json"
+			},
+			"browsers": {
+				"chrome": "55",
+				"chrome_android": "55",
+				"deno": "1.0",
+				"edge": "15",
+				"firefox": "52",
+				"firefox_android": "52",
+				"ie": null,
+				"nodejs": "7.6.0",
+				"oculus": "5.0",
+				"opera": "42",
+				"opera_android": "42",
+				"safari": "10.1",
+				"safari_ios": "10.3",
+				"samsunginternet_android": "6.0",
+				"webview_android": "55",
+				"webview_ios": "10.3"
+			}
+		},
+		"operators.async_generator_function": {
+			"human": "async_generator_function",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-generator-function-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/async_function*",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/async_generator_function.json"
+			},
+			"browsers": {
+				"chrome": "63",
+				"chrome_android": "63",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "55",
+				"firefox_android": "55",
+				"ie": null,
+				"nodejs": "10.0.0",
+				"oculus": "5.0",
+				"opera": "50",
+				"opera_android": "46",
+				"safari": "12",
+				"safari_ios": "12",
+				"samsunginternet_android": "8.0",
+				"webview_android": "63",
+				"webview_ios": "12"
+			}
+		},
+		"operators.await": {
+			"human": "await",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html#sec-async-function-definitions",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/await",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/await.json"
+			},
+			"browsers": {
+				"chrome": "55",
+				"chrome_android": "55",
+				"deno": "1.0",
+				"edge": "14",
+				"firefox": "52",
+				"firefox_android": "52",
+				"ie": null,
+				"nodejs": "7.6.0",
+				"oculus": "5.0",
+				"opera": "42",
+				"opera_android": "42",
+				"safari": "10.1",
+				"safari_ios": "10.3",
+				"samsunginternet_android": "6.0",
+				"webview_android": "55",
+				"webview_ios": "10.3"
+			}
+		},
+		"operators.import": {
+			"human": "import",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-import-calls",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/import",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/import.json"
+			},
+			"browsers": {
+				"chrome": "63",
+				"chrome_android": "63",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "67",
+				"firefox_android": "67",
+				"ie": null,
+				"nodejs": "13.2.0",
+				"oculus": "5.0",
+				"opera": "50",
+				"opera_android": "46",
+				"safari": "11.1",
+				"safari_ios": "11.3",
+				"samsunginternet_android": "8.0",
+				"webview_android": "63",
+				"webview_ios": "11.3"
+			}
+		},
+		"operators.import_meta": {
+			"human": "import_meta",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#prod-ImportMeta",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/import.meta",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/import_meta.json"
+			},
+			"browsers": {
+				"chrome": "64",
+				"chrome_android": "64",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "62",
+				"firefox_android": "62",
+				"ie": null,
+				"nodejs": "10.4.0",
+				"oculus": "5.0",
+				"opera": "51",
+				"opera_android": "47",
+				"safari": "11.1",
+				"safari_ios": "12",
+				"samsunginternet_android": "9.0",
+				"webview_android": "64",
+				"webview_ios": "12"
+			}
+		},
+		"operators.instanceof": {
+			"human": "instanceof",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-relational-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/instanceof",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/instanceof.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "5",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.logical_and_assignment": {
+			"human": "logical_and_assignment",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/logical_and_assignment.json"
+			},
+			"browsers": {
+				"chrome": "85",
+				"chrome_android": "85",
+				"deno": "1.2",
+				"edge": "85",
+				"firefox": "79",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "15.0.0",
+				"oculus": "12.0",
+				"opera": "71",
+				"opera_android": "60",
+				"safari": "14",
+				"safari_ios": "14",
+				"samsunginternet_android": "14.0",
+				"webview_android": "85",
+				"webview_ios": "14"
+			}
+		},
+		"operators.logical_or_assignment": {
+			"human": "logical_or_assignment",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-assignment-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/logical_or_assignment.json"
+			},
+			"browsers": {
+				"chrome": "85",
+				"chrome_android": "85",
+				"deno": "1.2",
+				"edge": "85",
+				"firefox": "79",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "15.0.0",
+				"oculus": "12.0",
+				"opera": "71",
+				"opera_android": "60",
+				"safari": "14",
+				"safari_ios": "14",
+				"samsunginternet_android": "14.0",
+				"webview_android": "85",
+				"webview_ios": "14"
+			}
+		},
+		"operators.object_initializer": {
+			"human": "object_initializer",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-object-initializer",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Object_initializer",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/object_initializer.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "1",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.strict_equality": {
+			"human": "strict_equality",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-equality-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Strict_equality",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/strict_equality.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"operators.strict_inequality": {
+			"human": "strict_inequality",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-equality-operators",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Strict_inequality",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/operators/strict_inequality.json"
+			},
+			"browsers": {
+				"chrome": "1",
+				"chrome_android": "18",
+				"deno": "1.0",
+				"edge": "12",
+				"firefox": "1",
+				"firefox_android": "4",
+				"ie": "4",
+				"nodejs": "0.10.0",
+				"oculus": "5.0",
+				"opera": "4",
+				"opera_android": "10.1",
+				"safari": "1",
+				"safari_ios": "1",
+				"samsunginternet_android": "1.0",
+				"webview_android": "4.4",
+				"webview_ios": "1"
+			}
+		},
+		"regular_expressions.lookbehind_assertion": {
+			"human": "lookbehind_assertion",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Assertion",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Lookbehind_assertion",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "62",
+				"chrome_android": "62",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "78",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "8.10.0",
+				"oculus": "5.0",
+				"opera": "49",
+				"opera_android": "46",
+				"safari": "16.4",
+				"safari_ios": "16.4",
+				"samsunginternet_android": "8.0",
+				"webview_android": "62",
+				"webview_ios": "16.4"
+			}
+		},
+		"regular_expressions.modifier": {
+			"human": "modifier",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-RegularExpressionModifiers",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Modifier",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "125",
+				"chrome_android": "125",
+				"deno": "1.44",
+				"edge": "125",
+				"firefox": "132",
+				"firefox_android": "132",
+				"ie": null,
+				"nodejs": "23.0.0",
+				"oculus": null,
+				"opera": "111",
+				"opera_android": "83",
+				"safari": null,
+				"safari_ios": null,
+				"samsunginternet_android": "27.0",
+				"webview_android": "125",
+				"webview_ios": null
+			}
+		},
+		"regular_expressions.named_backreference": {
+			"human": "named_backreference",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-AtomEscape",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Named_backreference",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "64",
+				"chrome_android": "64",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "78",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "10.0.0",
+				"oculus": "5.0",
+				"opera": "51",
+				"opera_android": "47",
+				"safari": "11.1",
+				"safari_ios": "11.3",
+				"samsunginternet_android": "9.0",
+				"webview_android": "64",
+				"webview_ios": "11.3"
+			}
+		},
+		"regular_expressions.named_capturing_group": {
+			"human": "named_capturing_group",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-Atom",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "64",
+				"chrome_android": "64",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "78",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "10.0.0",
+				"oculus": "5.0",
+				"opera": "51",
+				"opera_android": "47",
+				"safari": "11.1",
+				"safari_ios": "11.3",
+				"samsunginternet_android": "9.0",
+				"webview_android": "64",
+				"webview_ios": "11.3"
+			}
+		},
+		"regular_expressions.unicode_character_class_escape": {
+			"human": "unicode_character_class_escape",
+			"es": "unknown",
+			"urls": {
+				"spec": "https://tc39.es/ecma262/multipage/text-processing.html#prod-CharacterClassEscape",
+				"mdn": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Regular_expressions/Unicode_character_class_escape",
+				"github": "https://github.com/mdn/browser-compat-data/blob/main/javascript/regular_expressions.json"
+			},
+			"browsers": {
+				"chrome": "64",
+				"chrome_android": "64",
+				"deno": "1.0",
+				"edge": "79",
+				"firefox": "78",
+				"firefox_android": "79",
+				"ie": null,
+				"nodejs": "10.0.0",
+				"oculus": "5.0",
+				"opera": "51",
+				"opera_android": "47",
+				"safari": "11.1",
+				"safari_ios": "11.3",
+				"samsunginternet_android": "9.0",
+				"webview_android": "64",
+				"webview_ios": "11.3"
+			}
+		}
+	}
+}

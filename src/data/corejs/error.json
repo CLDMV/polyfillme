@@ -1,0 +1,11 @@
+{
+	"es.error.cause": "Error.prototype.cause",
+	"es.error.is-error": "Error.isError",
+	"es.error.to-string": "Error.prototype.toString",
+	"es.aggregate-error": "AggregateError",
+	"es.aggregate-error.cause": "AggregateError.prototype.cause",
+	"esnext.aggregate-error": "esnext.aggregate-error",
+	"esnext.suppressed-error.constructor": "esnext.suppressed-error.constructor",
+	"es.suppressed-error.constructor": "SuppressedError",
+	"esnext.error.is-error": "esnext.error.is-error"
+}

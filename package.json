@@ -4,7 +4,10 @@
 	"description": "Scan JS files for unsupported features and generate polyfill file.",
 	"main": "src/index.js",
 	"scripts": {
-		"test": "echo \"No tests yet\""
+		"test": "jest",
+		"build:corejs-map": "node ./src/data/scripts/corejs.js",
+		"build:corejs-browser-map": "node ./src/data/scripts/build-corejs-browser-map.js",
+		"build:mdn": "node ./src/data/scripts/mdn-js-features-info.js"
 	},
 	"keywords": [
 		"polyfill",
@@ -17,19 +20,23 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"core-js-compat": "^3.0.0",
+		"core-js": "^3.44.0",
 		"espree": "^9.0.0",
-		"fast-glob": "^3.0.0"
+		"fast-glob": "^3.0.0",
+		"polyfill-library": "^4.8.0"
 	},
 	"devDependencies": {
 		"@eslint/css": "^0.10.0",
 		"@eslint/js": "^9.31.0",
 		"@eslint/json": "^0.13.0",
 		"@eslint/markdown": "^7.0.0",
+		"@mdn/browser-compat-data": "^6.0.33",
 		"@prettier/plugin-php": "^0.20.0",
 		"@prettier/plugin-xml": "^1.2.0",
+		"core-js-compat": "^3.44.0",
 		"eslint": "^9.31.0",
 		"globals": "^16.3.0",
+		"jest": "^30.0.4",
 		"prettier": "^3.6.2"
 	}
 }

@@ -49,36 +49,130 @@ async function polyfillme(options) {
 	}
 
 	// 1. Resolve files
-	let filePaths;
-	try {
-		filePaths = await fg(files, { absolute: true });
-	} catch (err) {
-		throw new Error("Error resolving file globs: " + err.message);
+	let filePaths = [];
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log("[polyfillme] Resolving files:", files);
+	}
+	for (const entry of files) {
+		// If entry is an absolute path to a file, use it directly
+		if (fs.existsSync(entry) && fs.statSync(entry).isFile()) {
+			filePaths.push(entry);
+			if (process.env.POLYFILLME_DEBUG) {
+				console.log(`[polyfillme] Added absolute file path: ${entry}`);
+			}
+		} else {
+			// Otherwise, treat as glob pattern
+			try {
+				const matches = await fg(entry, { absolute: true });
+				filePaths.push(...matches);
+				if (process.env.POLYFILLME_DEBUG) {
+					console.log(`[polyfillme] Glob resolved for '${entry}':`, matches);
+				}
+			} catch (err) {
+				console.error(`[polyfillme] Error resolving glob '${entry}':`, err);
+				throw new Error(`Error resolving glob '${entry}': ${err.message}`);
+			}
+		}
+	}
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log("[polyfillme] Final resolved file paths:", filePaths);
 	}
 	// 2. Scan files for features
 	const usedFeatures = new Set();
 	for (const file of filePaths) {
+		if (process.env.POLYFILLME_DEBUG) {
+			console.log(`[polyfillme] Checking if file exists: ${file}`);
+		}
+		if (!fs.existsSync(file)) {
+			if (process.env.POLYFILLME_DEBUG) {
+				console.error(`[polyfillme] File does not exist: ${file}`);
+			}
+			continue;
+		}
 		let code;
 		try {
 			code = fs.readFileSync(file, "utf8");
+			if (process.env.POLYFILLME_DEBUG) {
+				console.log(`[polyfillme] Successfully read file: ${file}`);
+			}
 		} catch (err) {
+			if (process.env.POLYFILLME_DEBUG) {
+				console.error(`[polyfillme] Error reading file ${file}:`, err);
+			}
 			throw new Error(`Error reading file ${file}: ${err.message}`);
 		}
 		let ast;
 		try {
-			ast = espree.parse(code, { ecmaVersion: 2020, sourceType: "module" });
+			ast = espree.parse(code, { ecmaVersion: 2020, sourceType: "script" });
+			if (process.env.POLYFILLME_DEBUG) {
+				console.log(`[polyfillme] AST for ${file}:`, JSON.stringify(ast, null, 2));
+			}
 		} catch (err) {
+			if (process.env.POLYFILLME_DEBUG) {
+				console.error(`[polyfillme] Error parsing file ${file}:`, err);
+			}
 			throw new Error(`Error parsing file ${file}: ${err.message}`);
+		}
+		if (process.env.POLYFILLME_DEBUG) {
+			console.log(`[polyfillme] Calling walkAST for ${file}`);
 		}
 		walkAST(ast, usedFeatures);
 	}
-	// 3. Get unsupported features for target version
-	const unsupported = getUnsupportedFeatures([...usedFeatures], ecmaVersion);
-	// 4. Exclude already included polyfills
-	const required = unsupported.filter((f) => !includedPolyfills.includes(f));
-	// 5. Add additional polyfills
-	const allPolyfills = Array.from(new Set([...required, ...additionalPolyfills]));
+	// 3. Map ES/ECMA version to Browserslist query if needed
+	const { esEcmaToBrowserslist } = require("./lib/esEcmaToBrowserslist");
+	let targetQuery = esEcmaToBrowserslist(ecmaVersion) || ecmaVersion;
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log("[polyfillme] Target ES/ECMA:", ecmaVersion);
+		console.log("[polyfillme] Browserslist query:", targetQuery);
+		console.log("[polyfillme] Used features:", Array.from(usedFeatures));
+	}
+	const unsupported = getUnsupportedFeatures([...usedFeatures], targetQuery);
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log("[polyfillme] Unsupported features:", unsupported);
+		console.log("[polyfillme] Used features:", Array.from(usedFeatures));
+		console.log("[polyfillme] Target query:", targetQuery);
+	}
+	// Load mapping from core-js keys to user-friendly names
+	const featureMap = require("./data/corejs-feature-map.json");
+
+	// Helper: map polyfill key to user-friendly name if possible (strip es/esnext prefix)
+	function toUserFriendly(key) {
+		return featureMap[key] || key;
+	}
+
+	// 4. Exclude already included polyfills (support both key and friendly name)
+	const required = unsupported.filter((f) => {
+		return !includedPolyfills.includes(f) && !includedPolyfills.includes(toUserFriendly(f));
+	});
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log("[polyfillme] Required polyfills (after exclusion):", required);
+	}
+	// 5. Add additional polyfills (support both key and friendly name)
+	const allPolyfills = Array.from(
+		new Set([
+			...required,
+			...additionalPolyfills.map((p) => {
+				// If user provides user-friendly name, map to compat key if possible
+				if (featureMap[p]) {
+					// If input is a compat key, use as is
+					return p;
+				}
+				// If input is a user-friendly name, map to compat key
+				const compatKey = Object.keys(featureMap).find((k) => featureMap[k] === p);
+				return compatKey || p;
+			})
+		])
+	);
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log("[polyfillme] Final polyfills (compat keys):", allPolyfills);
+	}
 	// 6. Generate polyfill output
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log(
+			"[polyfillme] Import lines that will be generated:",
+			allPolyfills.map((f) => `import 'core-js/features/${f.replace(/\./g, "/")}';`)
+		);
+	}
 	const polyfillContent = await generatePolyfillFile(allPolyfills, { writeToFile, filePath, source });
 
 	// Shim/sham and not-found detection
@@ -90,13 +184,31 @@ async function polyfillme(options) {
 		// Try direct match, fallback to es. prefix
 		let meta = coreJsData[coreJsKey] || coreJsData["es." + coreJsKey] || coreJsData["esnext." + coreJsKey];
 		if (!meta) {
-			notFound.push(polyfill);
+			notFound.push(toUserFriendly(polyfill));
 		} else if (meta.sham) {
-			shams.push(polyfill);
+			shams.push(toUserFriendly(polyfill));
 		}
 	}
 
-	return { polyfills: allPolyfills, content: polyfillContent, shams, notFound };
+	const finalPolyfills = Array.from(new Set(allPolyfills.map(toUserFriendly)));
+	if (process.env.POLYFILLME_DEBUG) {
+		console.log("[polyfillme] Final polyfills (user-friendly):", finalPolyfills);
+		console.log(
+			"[polyfillme] Includes Promise?",
+			finalPolyfills.some((p) => p.includes("Promise"))
+		);
+		console.log(
+			"[polyfillme] Includes Array.prototype.includes?",
+			finalPolyfills.some((p) => p.includes("Array.prototype.includes"))
+		);
+	}
+	// Return user-friendly polyfill names (dedupe)
+	return {
+		polyfills: finalPolyfills,
+		content: polyfillContent,
+		shams: shams.map(toUserFriendly),
+		notFound: notFound.map(toUserFriendly)
+	};
 }
 
 module.exports = polyfillme;
