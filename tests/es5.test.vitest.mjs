@@ -4,11 +4,11 @@
  * Uses canonical feature keys from mdn.es.json for validation.
  * @returns {void}
  * @example
- * // Run with Jest
- * jest test/es5.test.js
+ * // Run with Vitest
+ * npm test -- es5.test.vitest.mjs
  */
-const polyfillme = require("../src/index");
-const mdnEs = require("../src/data/mdn/mdn.es.json");
+import polyfillme from "../src/index.js";
+import mdnEs from "../src/data/mdn/mdn.es.json" with { type: "json" };
 
 describe("polyfillme ES5", () => {
 	it("should allow only ES5 and earlier features, and polyfill later ones", async () => {
@@ -23,7 +23,7 @@ describe("polyfillme ES5", () => {
 		}
 		const result = await polyfillme({
 			ecmaVersion: "es5",
-			files: ["test/testfile.js"],
+			files: ["tests/testfile.js"],
 			includedPolyfills: [],
 			additionalPolyfills: [],
 			writeToFile: false
