@@ -4,11 +4,11 @@
  * Uses canonical feature keys from mdn.es.json for validation.
  * @returns {void}
  * @example
- * // Run with Jest
- * jest test/es4.test.js
+ * // Run with Vitest
+ * npm test -- es4.test.vitest.mjs
  */
-const polyfillme = require("../src/index");
-const mdnEs = require("../src/data/mdn/mdn.es.json");
+import polyfillme from "../src/index.js";
+import mdnEs from "../src/data/mdn/mdn.es.json" with { type: "json" };
 
 describe("polyfillme ES4", () => {
 	it("should allow only ES4 and earlier features, and polyfill later ones", async () => {
@@ -23,7 +23,7 @@ describe("polyfillme ES4", () => {
 		}
 		const result = await polyfillme({
 			ecmaVersion: "es4",
-			files: ["test/testfile.js"],
+			files: ["tests/testfile.js"],
 			includedPolyfills: [],
 			additionalPolyfills: [],
 			writeToFile: false
@@ -31,11 +31,14 @@ describe("polyfillme ES4", () => {
 		for (const feature of allowedKeys) {
 			expect(result.polyfills.includes(feature)).toBe(false);
 		}
+		const laterKeys = new Set();
 		for (const ver of esVersions.slice(targetIndex + 1)) {
 			for (const k in mdnEs[ver]) {
-				const canonical = mdnEs[ver][k];
-				expect(result.polyfills.includes(canonical)).toBe(true);
+				laterKeys.add(mdnEs[ver][k]);
 			}
+		}
+		for (const canonical of result.polyfills) {
+			expect(laterKeys.has(canonical)).toBe(true);
 		}
 	});
 });

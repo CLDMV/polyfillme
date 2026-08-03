@@ -1,9 +1,16 @@
-/* eslint-env jest */
-const fs = require("fs");
-const path = require("path");
-const polyfillme = require("../src/index");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import polyfillme from "../src/index.js";
 
-const TEST_FILE = path.join(__dirname, "testfile.js");
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// Dedicated fixture for this suite. It must NOT be the shared, committed
+// `tests/testfile.js` — the es<version> suites read that file's rich feature set,
+// and @cldmv/vitest-runner spawns each test file in its own parallel process, so
+// overwriting/deleting the shared fixture here would race and break them.
+const TEST_FILE = path.join(__dirname, "index.testfile.js");
+const TEST_FILE_REL = "tests/index.testfile.js";
 
 beforeAll(() => {
 	// Create a test JS file with some ES features
@@ -37,7 +44,7 @@ describe("polyfillme", () => {
 	it("returns polyfills and content for ES2015 (should NOT include Promise/includes)", async () => {
 		const result = await polyfillme({
 			ecmaVersion: "es2015",
-			files: ["test/testfile.js"],
+			files: [TEST_FILE_REL],
 			includedPolyfills: [],
 			additionalPolyfills: [],
 			writeToFile: false
@@ -54,7 +61,7 @@ describe("polyfillme", () => {
 	it("returns polyfills and content for ES5 (should include Promise/includes)", async () => {
 		const result = await polyfillme({
 			ecmaVersion: "es5",
-			files: ["test/testfile.js"],
+			files: [TEST_FILE_REL],
 			includedPolyfills: [],
 			additionalPolyfills: [],
 			writeToFile: false
@@ -72,7 +79,7 @@ describe("polyfillme", () => {
 	it("excludes already included polyfills", async () => {
 		const result = await polyfillme({
 			ecmaVersion: "es2015",
-			files: ["test/testfile.js"],
+			files: [TEST_FILE_REL],
 			includedPolyfills: ["Promise"],
 			additionalPolyfills: [],
 			writeToFile: false
@@ -83,7 +90,7 @@ describe("polyfillme", () => {
 	it("adds additional polyfills", async () => {
 		const result = await polyfillme({
 			ecmaVersion: "es2015",
-			files: ["test/testfile.js"],
+			files: [TEST_FILE_REL],
 			includedPolyfills: [],
 			additionalPolyfills: ["Symbol"],
 			writeToFile: false

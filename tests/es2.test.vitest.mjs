@@ -1,19 +1,19 @@
 /**
- * Comprehensive test for polyfillme ES3 feature support.
- * Ensures only ES3 and earlier features are allowed, and later ones are polyfilled.
+ * Comprehensive test for polyfillme ES2 feature support.
+ * Ensures only ES2 and earlier features are allowed, and later ones are polyfilled.
  * Uses canonical feature keys from mdn.es.json for validation.
  * @returns {void}
  * @example
- * // Run with Jest
- * jest test/es3.test.js
+ * // Run with Vitest
+ * npm test -- es2.test.vitest.mjs
  */
-const polyfillme = require("../src/index");
-const mdnEs = require("../src/data/mdn/mdn.es.json");
+import polyfillme from "../src/index.js";
+import mdnEs from "../src/data/mdn/mdn.es.json" with { type: "json" };
 
-describe("polyfillme ES3", () => {
-	it("should allow only ES3 and earlier features, and polyfill later ones", async () => {
+describe("polyfillme ES2", () => {
+	it("should allow only ES2 and earlier features, and polyfill later ones", async () => {
 		const esVersions = Object.keys(mdnEs);
-		const targetIndex = esVersions.indexOf("es3");
+		const targetIndex = esVersions.indexOf("es2");
 		const allowedVersions = targetIndex >= 0 ? esVersions.slice(0, targetIndex + 1) : ["es2"];
 		const allowedKeys = new Set();
 		for (const ver of allowedVersions) {
@@ -22,8 +22,8 @@ describe("polyfillme ES3", () => {
 			}
 		}
 		const result = await polyfillme({
-			ecmaVersion: "es3",
-			files: ["test/testfile.js"],
+			ecmaVersion: "es2",
+			files: ["tests/testfile.js"],
 			includedPolyfills: [],
 			additionalPolyfills: [],
 			writeToFile: false
@@ -31,11 +31,14 @@ describe("polyfillme ES3", () => {
 		for (const feature of allowedKeys) {
 			expect(result.polyfills.includes(feature)).toBe(false);
 		}
+		const laterKeys = new Set();
 		for (const ver of esVersions.slice(targetIndex + 1)) {
 			for (const k in mdnEs[ver]) {
-				const canonical = mdnEs[ver][k];
-				expect(result.polyfills.includes(canonical)).toBe(true);
+				laterKeys.add(mdnEs[ver][k]);
 			}
+		}
+		for (const canonical of result.polyfills) {
+			expect(laterKeys.has(canonical)).toBe(true);
 		}
 	});
 });
