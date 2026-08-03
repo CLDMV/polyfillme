@@ -124,7 +124,7 @@ on:
         description: "Default branch name — badge is only pushed on pushes to this branch"
         type: string
         required: false
-        default: "main"
+        default: "master"
       enable_coverage_pr_comment:
         description: "Inject a coverage badge into the PR description on pull request events"
         type: boolean
@@ -210,7 +210,7 @@ jobs:
       # are automatically skipped so coverage always reflects merged master code.
       # Requires: the coverage_command produces coverage/coverage-summary.json
       enable_coverage_badge: ${{ github.event.inputs.enable_coverage_badge != 'false' }}
-      default_branch: ${{ github.event.inputs.default_branch || 'main' }} # Badge only pushed when a push lands on this branch
+      default_branch: ${{ github.event.inputs.default_branch || 'master' }} # Badge only pushed when a push lands on this branch
       coverage_command: ${{ github.event.inputs.coverage_command || 'npm run ci:coverage' }}
       coverage_summary_path: ${{ github.event.inputs.coverage_summary_path || 'coverage/coverage-summary.json' }}
       badges_branch: ${{ github.event.inputs.badges_branch || 'badges' }}
