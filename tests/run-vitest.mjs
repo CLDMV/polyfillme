@@ -4,8 +4,8 @@
  * (under coverage) uses a blob-per-file + `--mergeReports` strategy so a single
  * process never holds coverage data for the whole suite.
  *
- * The existing tests live in `test/` as CommonJS `*.test.js` files; Vitest runs
- * them as-is (globals enabled via .configs/vitest.config.mjs).
+ * The tests live in `tests/` as ESM `*.test.vitest.mjs` files; Vitest runs them
+ * with Jest-style globals enabled via .configs/vitest.config.mjs.
  *
  * Usage:
  *   node tests/run-vitest.mjs                 # run all tests
@@ -42,12 +42,12 @@ const workers = Number.isInteger(parsedWorkers) && parsedWorkers > 0 ? parsedWor
 
 const code = await run({
 	cwd: root,
-	testDir: "test",
+	testDir: "tests",
 	vitestConfig: ".configs/vitest.config.mjs",
-	// CommonJS `*.test.js` files. The lone `es5.debug.test.js` is an ESM debug
-	// scratch with no test cases — exclude it from discovery via the negative
-	// lookbehind so the runner never spawns it.
-	testFilePattern: /(?<!\.debug)\.test\.js$/,
+	// ESM `*.test.vitest.mjs` files. The lone `es5.debug.test.vitest.mjs` is an
+	// ESM debug scratch with no test cases — exclude it from discovery via the
+	// negative lookbehind so the runner never spawns it.
+	testFilePattern: /(?<!\.debug)\.test\.vitest\.mjs$/,
 	testPatterns,
 	workers,
 	coverageQuiet,

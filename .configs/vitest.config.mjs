@@ -13,11 +13,11 @@ export default defineConfig({
 		// `expect` / `beforeAll` / `afterAll` with no imports — so Vitest must
 		// expose those as globals for the tests to run unchanged.
 		globals: true,
-		// CommonJS test files live in `test/` and end in `.test.js`. The lone
-		// `es5.debug.test.js` is an ESM debug scratch (no test cases) and is
-		// excluded here; the runner harness excludes it from discovery too.
-		include: ["test/**/*.test.js"],
-		exclude: ["node_modules", "test/**/*.debug.test.js"],
+		// ESM test files live in `tests/` and end in `.test.vitest.mjs`. The lone
+		// `es5.debug.test.vitest.mjs` is an ESM debug scratch (no test cases) and
+		// is excluded here; the runner harness excludes it from discovery too.
+		include: ["tests/**/*.test.vitest.mjs"],
+		exclude: ["node_modules", "tests/**/*.debug.test.vitest.mjs"],
 		environment: "node",
 		testTimeout: 30000,
 		// "dot" keeps CI logs to one character per test file instead of a full
@@ -30,7 +30,7 @@ export default defineConfig({
 			// holds MDN data + generation scripts (build:mdn tooling), not the
 			// runtime library, so it is deliberately out of scope.
 			include: ["src/index.js", "src/lib/**"],
-			exclude: ["**/*.json", "test/**"],
+			exclude: ["**/*.json", "tests/**"],
 			reporter: ["text", "html", "json-summary", "json"]
 		}
 	}
