@@ -1,6 +1,6 @@
 {
 	"name": "polyfillme",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Scan JS files for unsupported features and generate polyfill file.",
 	"main": "src/index.js",
 	"scripts": {
