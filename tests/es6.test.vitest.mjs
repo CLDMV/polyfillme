@@ -1,20 +1,20 @@
 /**
- * Comprehensive test for polyfillme ES2016 feature support.
- * Ensures only ES2016 and earlier features are allowed, and later ones are polyfilled.
+ * Comprehensive test for polyfillme ES6 feature support.
+ * Ensures only ES6 and earlier features are allowed, and later ones are polyfilled.
  * Uses canonical feature keys from mdn.es.json for validation.
  * @returns {void}
  * @example
- * // Run with Jest
- * jest test/es2016.test.js
+ * // Run with Vitest
+ * npm test -- es6.test.vitest.mjs
  */
-const polyfillme = require("../src/index");
-const mdnEs = require("../src/data/mdn/mdn.es.json");
+import polyfillme from "../src/index.js";
+import mdnEs from "../src/data/mdn/mdn.es.json" with { type: "json" };
 
-describe("polyfillme ES2016", () => {
-	it("should allow only ES2016 and earlier features, and polyfill later ones", async () => {
+describe("polyfillme ES6", () => {
+	it("should allow only ES6 and earlier features, and polyfill later ones", async () => {
 		const esVersions = Object.keys(mdnEs);
-		const targetIndex = esVersions.indexOf("es2016");
-		const allowedVersions = targetIndex >= 0 ? esVersions.slice(0, targetIndex + 1) : ["es2016"];
+		const targetIndex = esVersions.indexOf("es6");
+		const allowedVersions = targetIndex >= 0 ? esVersions.slice(0, targetIndex + 1) : ["es6"];
 		const allowedKeys = new Set();
 		for (const ver of allowedVersions) {
 			for (const k in mdnEs[ver]) {
@@ -22,8 +22,8 @@ describe("polyfillme ES2016", () => {
 			}
 		}
 		const result = await polyfillme({
-			ecmaVersion: "es2016",
-			files: ["test/testfile.js"],
+			ecmaVersion: "es6",
+			files: ["tests/testfile.js"],
 			includedPolyfills: [],
 			additionalPolyfills: [],
 			writeToFile: false
