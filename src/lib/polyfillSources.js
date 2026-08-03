@@ -1,5 +1,9 @@
 const polyfillLibrary = require("polyfill-library");
-const fetch = require("node-fetch");
+// Uses the global `fetch` (Node 18+; the package targets Node 22+ via CI). The
+// former `require("node-fetch")` was a dead dependency — not declared in
+// package.json and absent from the lockfile — so requiring this module threw
+// MODULE_NOT_FOUND before any test could run.
+const fetch = globalThis.fetch;
 
 /**
  * Fetches polyfill code for a list of features from the specified source.
