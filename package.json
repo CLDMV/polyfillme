@@ -23,7 +23,7 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"espree": "^9.0.0",
+		"espree": "^11.2.0",
 		"fast-glob": "^3.0.0",
 		"polyfill-library": "^4.8.0"
 	},
