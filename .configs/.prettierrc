@@ -4,11 +4,18 @@
 	"printWidth": 140,
 	"trailingComma": "none",
 	"quoteProps": "preserve",
+	"bracketSpacing": true,
 	"overrides": [
 		{
 			"files": "*.xml",
 			"options": {
 				"printWidth": 300
+			}
+		},
+		{
+			"files": "*.md",
+			"options": {
+				"proseWrap": "preserve"
 			}
 		}
 	]

@@ -16,7 +16,6 @@ describe("polyfillme ES2025", () => {
 		.filter((v) => v.startsWith("es") && !isNaN(Number(v.replace("es", ""))))
 		.sort((a, b) => Number(a.replace("es", "")) - Number(b.replace("es", "")));
 	const targetIndex = esVersions.indexOf("es2025");
-	const nextIndex = esVersions.indexOf("es2026");
 	const allowedVersions = targetIndex >= 0 ? esVersions.slice(0, targetIndex + 1) : ["es2025"];
 	const allowedKeys = new Set();
 	for (const ver of allowedVersions) {
