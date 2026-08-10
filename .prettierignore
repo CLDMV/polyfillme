@@ -1,9 +1,19 @@
+# Dependencies + generated/build output (not hand-authored)
 node_modules/
 dist/
 build/
 coverage/
+tmp/
+trash/
 package-lock.json
+*.min.js
+*.min.css
 # generated MDN feature data
 src/data/
 # intentional-error scan fixture
 tests/testfile.js
+
+# YAML — CI workflows are deliberately 4-space indented; prettier (tabWidth 2,
+# and YAML disallows tabs) would reindent every file 4->2 for no real gain.
+*.yml
+*.yaml
