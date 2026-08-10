@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+coverage/
+package-lock.json
+# generated MDN feature data
+src/data/
+# intentional-error scan fixture
+tests/testfile.js
