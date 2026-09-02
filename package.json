@@ -40,9 +40,9 @@
 		"@eslint/js": "^9.31.0",
 		"@eslint/json": "^2.0.1",
 		"@eslint/markdown": "^8.0.3",
-		"@mdn/browser-compat-data": "^8.0.12",
+		"@mdn/browser-compat-data": "^8.0.13",
 		"@vitest/coverage-v8": "^4.1.11",
-		"eslint": "^10.9.0",
+		"eslint": "^10.9.1",
 		"globals": "^16.3.0",
 		"prettier": "^3.9.6",
 		"vitest": "^4.1.10"
