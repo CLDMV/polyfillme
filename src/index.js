@@ -73,7 +73,7 @@ async function polyfillme(options) {
 				}
 			} catch (err) {
 				console.error(`[polyfillme] Error resolving glob '${entry}':`, err);
-				throw new Error(`Error resolving glob '${entry}': ${err.message}`);
+				throw new Error(`Error resolving glob '${entry}': ${err.message}`, { cause: err });
 			}
 		}
 	}
@@ -102,7 +102,7 @@ async function polyfillme(options) {
 			if (process.env.POLYFILLME_DEBUG) {
 				console.error(`[polyfillme] Error reading file ${file}:`, err);
 			}
-			throw new Error(`Error reading file ${file}: ${err.message}`);
+			throw new Error(`Error reading file ${file}: ${err.message}`, { cause: err });
 		}
 		let ast;
 		try {
@@ -114,7 +114,7 @@ async function polyfillme(options) {
 			if (process.env.POLYFILLME_DEBUG) {
 				console.error(`[polyfillme] Error parsing file ${file}:`, err);
 			}
-			throw new Error(`Error parsing file ${file}: ${err.message}`);
+			throw new Error(`Error parsing file ${file}: ${err.message}`, { cause: err });
 		}
 		if (process.env.POLYFILLME_DEBUG) {
 			console.log(`[polyfillme] Calling walkAST for ${file}`);
