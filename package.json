@@ -14,7 +14,8 @@
 		"lint": "eslint --config .configs/eslint.config.mjs .",
 		"lint:fix": "eslint --config .configs/eslint.config.mjs . --fix",
 		"format": "prettier --config .configs/.prettierrc --write .",
-		"format:check": "prettier --config .configs/.prettierrc --check ."
+		"format:check": "prettier --config .configs/.prettierrc --check .",
+		"fix:headers": "fix-headers --config .configs/fix-headers.json"
 	},
 	"keywords": [
 		"polyfill",
@@ -32,7 +33,9 @@
 		"polyfill-library": "^4.8.0"
 	},
 	"devDependencies": {
+		"@cldmv/configs": "^1.2.0",
 		"@cldmv/eslint-plugin-jsonv": "^1.0.3",
+		"@cldmv/fix-headers": "^2.1.1",
 		"@cldmv/jsonv": "^1.0.2",
 		"@cldmv/prettier-plugin-jsonv": "^1.0.1",
 		"@cldmv/vitest-runner": "^1.2.0",

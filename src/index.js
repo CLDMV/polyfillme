@@ -1,4 +1,19 @@
 /**
+ *
+ *	@Project: polyfillme
+ *	@Filename: /src/index.js
+ *	@Date: 2025-07-19T20:03:08-07:00 (1752980588)
+ *	@Author: Nate Corcoran <CLDMV>
+ *	@Email: <Shinrai@users.noreply.github.com>
+ *	-----
+ *	@Last modified by: Nate Corcoran <CLDMV> (Shinrai@users.noreply.github.com)
+ *	@Last modified time: 2026-10-02T12:17:04-07:00 (1790968624)
+ *	-----
+ *	@Copyright: Copyright (c) 2013-2026 Catalyzed Motivation Inc. All rights reserved.
+ *
+ */
+
+/**
  * @module polyfillme
  * Main entry point for polyfillme module.
  * Scans files for unsupported JS features and generates polyfill file or content.
