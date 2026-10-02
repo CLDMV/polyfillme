@@ -1,4 +1,19 @@
 /**
+ *
+ *	@Project: polyfillme
+ *	@Filename: /tests/run-vitest.mjs
+ *	@Date: 2026-08-03T03:58:08+00:00 (1785729488)
+ *	@Author: Nate Corcoran <CLDMV>
+ *	@Email: <Shinrai@users.noreply.github.com>
+ *	-----
+ *	@Last modified by: Nate Corcoran <CLDMV> (Shinrai@users.noreply.github.com)
+ *	@Last modified time: 2026-10-02T12:17:05-07:00 (1790968625)
+ *	-----
+ *	@Copyright: Copyright (c) 2013-2026 Catalyzed Motivation Inc. All rights reserved.
+ *
+ */
+
+/**
  * @fileoverview OOM-safe Vitest runner for polyfillme — delegates to
  * @cldmv/vitest-runner, which spawns each test file in its own child process and
  * (under coverage) uses a blob-per-file + `--mergeReports` strategy so a single
