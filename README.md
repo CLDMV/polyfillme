@@ -48,4 +48,4 @@ Generates a `polyfills.js` file with imports for required polyfills.
 
 ## License
 
-MIT
+Apache-2.0. See [LICENSE](https://github.com/CLDMV/polyfillme/blob/master/LICENSE) for the full text.
