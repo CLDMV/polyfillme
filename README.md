@@ -18,6 +18,7 @@ Feature availability comes from MDN browser-compat data bundled with the package
 
 - **Relicensed under Apache-2.0** — polyfillme moves from MIT to the Apache License 2.0, and the repository now includes the full license text in `LICENSE`. Apache-2.0 keeps MIT's permissive terms and adds an explicit patent grant. No runtime code changed, so this is a drop-in update (#56).
 - **Release notes for every version** — each release from v1.0.0 on now has its own changelog under `docs/changelog/`, and the README documents the real return value and options of `polyfillme()`.
+- **Header tooling on fix-headers 2.2.0** — the `@cldmv/fix-headers` and `@cldmv/configs` dev dependencies move to 2.2.0 and 1.2.4, so `@Last modified by` now follows content edits only; no file was restamped (#60, #61).
 - [View full v1.0.8 Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.8.md)
 
 ### Recent Releases
