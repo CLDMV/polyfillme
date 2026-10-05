@@ -33,7 +33,7 @@
 		"polyfill-library": "^4.8.0"
 	},
 	"devDependencies": {
-		"@cldmv/configs": "^1.2.0",
+		"@cldmv/configs": "^1.2.4",
 		"@cldmv/eslint-plugin-jsonv": "^1.0.13",
 		"@cldmv/fix-headers": "^2.2.0",
 		"@cldmv/jsonv": "^1.0.2",
