@@ -1,6 +1,6 @@
 {
 	"name": "polyfillme",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "Scan JS files for unsupported features and generate polyfill file.",
 	"main": "src/index.js",
 	"scripts": {
@@ -34,20 +34,20 @@
 	},
 	"devDependencies": {
 		"@cldmv/configs": "^1.2.4",
-		"@cldmv/eslint-plugin-jsonv": "^1.0.13",
+		"@cldmv/eslint-plugin-jsonv": "^1.0.15",
 		"@cldmv/fix-headers": "^2.2.0",
-		"@cldmv/jsonv": "^1.0.2",
-		"@cldmv/prettier-plugin-jsonv": "^1.1.0",
-		"@cldmv/vitest-runner": "^1.5.1",
+		"@cldmv/jsonv": "^1.1.3",
+		"@cldmv/prettier-plugin-jsonv": "^1.1.3",
+		"@cldmv/vitest-runner": "^1.5.3",
 		"@eslint/css": "^2.0.0",
 		"@eslint/js": "^10.0.1",
 		"@eslint/json": "^2.1.0",
 		"@eslint/markdown": "^8.0.3",
-		"@mdn/browser-compat-data": "^8.1.3",
+		"@mdn/browser-compat-data": "^8.1.4",
 		"@vitest/coverage-v8": "^5.0.2",
-		"eslint": "^10.11.0",
-		"globals": "^17.12.0",
+		"eslint": "^10.12.0",
+		"globals": "^17.13.0",
 		"prettier": "^3.9.9",
-		"vitest": "^5.0.2"
+		"vitest": "^5.0.3"
 	}
 }
