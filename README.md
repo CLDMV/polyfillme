@@ -14,19 +14,18 @@ Feature availability comes from MDN browser-compat data bundled with the package
 
 ## ✨ What's New
 
-### Latest: v1.0.8 (October 2026)
+### Latest: v1.0.9 (October 2026)
 
-- **Relicensed under Apache-2.0** — polyfillme moves from MIT to the Apache License 2.0, and the repository now includes the full license text in `LICENSE`. Apache-2.0 keeps MIT's permissive terms and adds an explicit patent grant. No runtime code changed, so this is a drop-in update (#56).
-- **Release notes for every version** — each release from v1.0.0 on now has its own changelog under `docs/changelog/`, and the README documents the real return value and options of `polyfillme()`.
-- **Header tooling on fix-headers 2.2.0** — the `@cldmv/fix-headers` and `@cldmv/configs` dev dependencies move to 2.2.0 and 1.2.4, so `@Last modified by` now follows content edits only; no file was restamped (#60, #61).
-- [View full v1.0.8 Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.8.md)
+- **Security update to a dev-only dependency** — `brace-expansion` 5.0.12 fixes a quadratic-time denial of service (GHSA-q2hr-2g5m-vwhr). It is reached only through the lint and test toolchain, so installed copies of polyfillme were not exposed (#64).
+- **Dev dependency updates** — `vitest` 5.0.3, `eslint` 10.12.0, `globals` 17.13.0, `@cldmv/vitest-runner` 1.5.3 and the jsonv packages. No runtime code changed; running the tests locally needs Node.js 22.12 or newer (#65, #66, #68, #70).
+- [View full v1.0.9 Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.9.md)
 
 ### Recent Releases
 
+- **v1.0.8** (October 2026) — relicensed under Apache-2.0, a changelog for every version, and header tooling on fix-headers 2.2.0; no runtime change (#56, #60, #61) ([Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.8.md))
 - **v1.0.7** (October 2026) — CI: the in-repo PR mirror job runs instead of being skipped; dev-dependency updates; no runtime change (#54) ([Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.7.md))
 - **v1.0.6** (October 2026) — uniform CLDMV file headers, workflows synced with the v4.29.2 templates, bundle-size reporting, and the test toolchain on Vitest 5; no runtime behavior change (#44, #45, #50) ([Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.6.md))
 - **v1.0.5** (September 2026) — errors thrown for glob, read and parse failures now carry the original error as `cause`; CI matrix raised for Vitest 5 ([Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.5.md))
-- **v1.0.4** (August 2026) — patches the `picomatch` and `nanoid` advisories and upgrades `espree` to 11, which raises the Node.js floor to `^20.19.0 || ^22.13.0 || >=24` despite being a patch (#20) ([Changelog](https://github.com/CLDMV/polyfillme/blob/master/docs/changelog/v1/v1.0.4.md))
 
 📚 **For complete version history and detailed release notes, see the [docs/changelog/](https://github.com/CLDMV/polyfillme/tree/master/docs/changelog/) folder.**
 
