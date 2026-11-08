@@ -45,7 +45,7 @@ Feature availability comes from MDN browser-compat data bundled with the package
 
 ### Requirements
 
-- **Node.js `^20.19.0`, `^22.13.0` or `>=24`** — the range required by the bundled `espree` 11 parser.
+- **Node.js `^20.19.0`, `^22.13.0` or `>=24`** — the range required by the bundled `espree` 11 parser. Development needs Node.js 22.22.0 or newer.
 - polyfillme is a CommonJS package: load it with `require("polyfillme")`, or with `import polyfillme from "polyfillme"` from an ES module.
 
 ### Install
